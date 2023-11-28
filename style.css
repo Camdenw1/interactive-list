@@ -1,0 +1,43 @@
+#app {
+    text-align: center;
+  }
+
+  .list-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arrow-box,
+  .delete-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .arrow,
+  .delete-btn {
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .delete-btn {
+    color: red;
+    width: 25px;
+    height: 25px;
+    border: 2pt red solid;
+  }
+
+  .delete-img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .arrow-img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }

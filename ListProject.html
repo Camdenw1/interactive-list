@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive List</title>
+    <style>
+      #app {
+        text-align: center;
+      }
+
+      .list-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .arrow-box {
+        display: flex;
+        align-items: center;
+      }
+
+      .arrow-img,
+      .delete-img {
+        cursor: pointer;
+        font-size: 18px;
+        margin: 5px;
+      }
+
+      .delete-img {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Interactive List</h1>
+      <div>
+        <input
+          v-model="newName"
+          placeholder="Enter a name"
+          @keyup.enter="addName"
+        />
+        <button @click="addName">Add</button>
+      </div>
+      <div v-if="names.length > 0">
+        <div
+          v-for="(item, index) in rankedNames"
+          :key="index"
+          class="list-item"
+        >
+          <div>{{ item.rank }}. {{ item.name }}</div>
+          <div class="arrow-box">
+            <img
+              class="arrow-img"
+              @click="moveUp(index)"
+              v-if="index > 0"
+              src="upArrow.png"
+              alt="Up Arrow"
+            />
+            <img
+              class="arrow-img"
+              @click="moveDown(index)"
+              v-if="index < rankedNames.length - 1"
+              src="downArrow.png"
+              alt="Down Arrow"
+            />
+            <img
+              class="delete-img"
+              src="./deleteBtn.png"
+              @click="deleteItem(index)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./logic.js"></script>
+  </body>
+</html>
