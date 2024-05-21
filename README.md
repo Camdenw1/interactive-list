@@ -1,6 +1,7 @@
 # Interactive List Website
 
-Motivation for project:
+### Motivation:
+
 I needed to create a list where I could easily change the order of the items in the list as well as easily add or delete items from the list.
 So, I decided to try and make my own website that can do this even with no knowledge of how to do this.
 I wanted to challenge myself and test my ability to learn something new.
