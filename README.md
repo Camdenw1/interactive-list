@@ -24,7 +24,6 @@ User-Friendly Design: The design is simple yet effective, ensuring ease of use f
 I have never used HTML, CSS, or JavaScript before
 Problem-Solving: Learned to troubleshoot and debug issues that arose during development, enhancing my problem-solving skills.
 Project Management: Managed the project timeline and tasks effectively, ensuring timely completion and functionality.
-Screenshots:
 
 ### Conclusion:
 This project was an excellent introduction to web development and interactive design. It pushed me to quickly learn and apply new skills, resulting in a functional application.
